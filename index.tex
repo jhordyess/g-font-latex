@@ -1,0 +1,36 @@
+\documentclass{beamer}
+
+\usepackage[Emoticons]{ucharclasses}
+\usepackage{fontspec,polyglossia,xunicode,xltxtra}
+\defaultfontfeatures{Numbers=Lining,Ligatures=NoCommon}
+\setsansfont{Cabin}[
+  Path=./fonts/Cabin/static/Cabin/,
+  Extension = .ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic
+]
+\setdefaultlanguage{spanish}
+
+%Information to be included in the title page:
+\title{LaTeX Beamer presentation with Cabin font}
+\author{Jhordy Gavinchu}
+\institute{\href{https://jhordyess.com}{Jhordyess}}
+\date{2022}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Cabin font}
+Designed by Impallari Type, Rodrigo Fuenzalida
+\href{https://fonts.google.com/specimen/Cabin/tester}{\beamergotobutton{Google Font > Cabin}}
+\end{frame}
+
+\begin{frame}
+  Exercitation exercitation in aliquip quis in consequat irure amet incididunt consectetur enim quis labore. Enim eiusmod aute elit pariatur culpa ipsum reprehenderit minim ullamco. Ipsum duis pariatur sint consectetur. Esse in aliquip non aliqua et labore qui consectetur nisi proident ullamco proident. Amet quis et aliquip ullamco elit irure voluptate eu commodo esse magna et ipsum.
+\end{frame}
+
+\end{document}
