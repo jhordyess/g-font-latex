@@ -1,26 +1,35 @@
 \documentclass{beamer}
-\usetheme{Antibes}
-\usepackage{fontspec,polyglossia,xunicode,xltxtra}
-\defaultfontfeatures{Numbers=Lining,Ligatures=NoCommon}
-\setsansfont{Cabin}[
-  Path=./fonts/Cabin/static/Cabin/,
-  Extension = .ttf,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  ItalicFont=*-Italic,
-  BoldItalicFont=*-BoldItalic
-]
-\setdefaultlanguage{english}
+
+\usetheme{metropolis}
+
+\usepackage{listings}
+\lstset{language=bash,
+basicstyle=\footnotesize\ttfamily}
+
+\usepackage{fontspec}
+\setmainfont{Cabin}
+\usepackage{babel}
+
+\usepackage{hyperref}
 
 \title{\LaTeX\, Beamer presentation with Cabin font}
 \author{Jhordy Gavinchu}
 \institute{\href{https://jhordyess.com}{Jhordyess}}
-\date{2022}
+\date{\today}
 
 \begin{document}
 
-\begin{frame}
-  \titlepage
+\maketitle
+
+\section{Install Google Fonts Locally}
+
+\begin{frame}{Install Google Fonts Locally}
+  \begin{itemize}
+    \item First, visit \href{https://fonts.google.com/}{Google Fonts} and choose one font.
+    \item Copy the url, ie: \href{https://fonts.google.com/specimen/Cabin}{https://fonts.google.com/specimen/Cabin}
+    \item Run the \lstinline{font-installer.sh} script with: \lstinline{bash ./font-installer.sh}
+  \end{itemize}
+  The script automatically downloads and install the font in the path: \lstinline{/usr/share/fonts/truetype}
 \end{frame}
 
 \section{Cabin font}
@@ -30,32 +39,30 @@
   \href{https://fonts.google.com/specimen/Cabin/tester}{\beamergotobutton{Google Font > Cabin}}
 \end{frame}
 
-\section{Lists}
+\section{Lorem Ipsum}
 
-\begin{frame}{Lists}
-Reprehenderit reprehenderit minim sit sit quis ullamco ea laboris fugiat esse nisi:
-\begin{itemize}
+\begin{frame}{Create Beamer Presentation}
+  Reprehenderit reprehenderit minim sit sit quis ullamco ea laboris fugiat esse nisi:
+  \begin{itemize}
     \item Helpuuhu
     \item Sevecuw
     \item Hobjepo
-\end{itemize}
+  \end{itemize}
 
-Sunt nulla ipsum amet laborum amet aliqua cillum fugiat ipsum est ut pariatur:
-\begin{enumerate}
+  Sunt nulla ipsum amet laborum amet aliqua cillum fugiat ipsum est ut pariatur:
+  \begin{enumerate}
     \item Mecubtem
     \item Uliazoci
-    \begin{enumerate}
-      \item Ragereg
-      \item Zogguvij
-      \begin{enumerate}
-        \item Nemugi
-      \end{enumerate} 
-    \end{enumerate} 
+          \begin{enumerate}
+            \item Ragereg
+            \item Zogguvij
+                  \begin{enumerate}
+                    \item Nemugi
+                  \end{enumerate}
+          \end{enumerate}
     \item Buthite
-\end{enumerate}
+  \end{enumerate}
 \end{frame}
-
-\section{Lorem Ipsum}
 
 \begin{frame}
   Exercitation exercitation in aliquip quis in consequat irure amet incididunt consectetur enim quis labore. Enim eiusmod aute elit pariatur culpa ipsum reprehenderit minim ullamco. Ipsum duis pariatur sint consectetur. Esse in aliquip non aliqua et labore qui consectetur nisi proident ullamco proident. Amet quis et aliquip ullamco elit irure voluptate eu commodo esse magna et ipsum.
