@@ -4,7 +4,7 @@ LaTeX Beamer presentation with Cabin font
 
 ## Screenshot
 
-![Title page](https://res.cloudinary.com/jhordyess/image/upload/v1679082099/g-font-latex/title.png)
+<a href="index.pdf"><img src="https://res.cloudinary.com/jhordyess/image/upload/v1679082099/g-font-latex/title.png" alt="Title page"></a>
 
 ## License
 
