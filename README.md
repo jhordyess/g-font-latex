@@ -2,7 +2,7 @@
 
 LaTeX Beamer presentation with Cabin font
 
-# Screenshot
+## Screenshot
 
 ![Title page](https://res.cloudinary.com/jhordyess/image/upload/v1679082099/g-font-latex/title.png)
 
