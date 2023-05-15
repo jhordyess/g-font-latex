@@ -15,7 +15,9 @@ wget "https://fonts.google.com/download?family=$FONT_NAME" -O "$FONT_NAME.zip"
 sudo mkdir -p "/usr/share/fonts/truetype/google-fonts"
 
 # Extract the zip file into the fonts directory
-sudo unzip -o "$FONT_NAME.zip" -d "/usr/share/fonts/truetype/google-fonts"
+sudo unzip -o "$FONT_NAME.zip" -d "/usr/share/fonts/truetype/google-fonts/$FONT_NAME"
+
+# Note: There are some fonts, complicated to reference them using fontspec. Example: Open Sans
 
 # Delete the zip file
 rm "$FONT_NAME.zip"
